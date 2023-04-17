@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>School Website</title>
+    <link rel="stylesheet" href="css/index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!-- 1st Section: Navigation Bar -->
+   <nav>
+      <a href="index.html" class="logo">
+          <img src="assets/school.png" alt="Logo">
+      </a>
+      <ul class="menu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="profile.html">Our Profile</a></li>
+          <li><a href="#">Achievement</a></li>
+          <li><a href="#messageUs">Message Us</a></li>
+      </ul>
+   </nav>
+
+    <!-- 2nd Section: Header Image with Text -->
+    <header>
+        <img src="assets/Header.jpg" alt="Header Image">
+        <div class="header-text">
+            <h1>Welcome to Our Website</h1>
+            <h3>Ini adalah website latihan pertama</h3>
+        </div>
+    </header>
+
+    <!-- Our Facilitation -->
+    <section class="explanation-container">
+        <h2>Our Facilitation</h2>
+        <div class="explanation">
+            <img src="assets/teacher.jpg" alt="Image 1">
+            <h3>Professional Teacher</h3>
+        </div>
+
+        <!-- Explanation 2 -->
+        <div class="explanation">
+            <img src="assets/sport.jpg" alt="Image 2">
+            <h3>Sport Field</h3>
+        </div>
+
+        <!-- Explanation 3 -->
+        <div class="explanation">
+            <img src="assets/classroom.jpg" alt="Image 3">
+            <h3>classroom</h3>
+        </div>
+    </section>
+
+    <!-- Message Us -->
+    <section id="messageUs" class="message">
+        <div class="left-section">
+            <h2>Message Us</h2>
+            <form id="messageForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday" required>
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="right-section">
+            <p id="result"></p>
+        </div>
+    </section>
+
+    <script src="js/index.js"></script>
+    <footer>
+        <p>&copy; 2023 ABC School. All rights reserved. | Website by YourWebDesign</p>
+    </footer>
+</body>
+</html>
